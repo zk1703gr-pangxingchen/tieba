@@ -1,0 +1,16 @@
+/* 警告框 */
+#se_alert{
+	margin: 15px 0;
+}
+#se_alert p{
+	margin: 15px 0;
+}
+
+/* 留言板 */
+.media-heading {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+#textarea{
+	margin: 15px 0;
+}

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<title></title>
+	</head>
+	<body>
+		<!-- header-->
+		<nav class="nav navbar-default">
+			<div class="container">
+				<!-- 小屏幕按钮   -->
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="index.html" class="navbar-brand">Admin Manger</a>
+				</div>
+				<!-- 小屏幕按钮   -->
+				<!-- 大屏幕导航 -->
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-left text-center ">
+						<li class="active">
+							<a href="index.html">
+								<span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;后台首页</a>
+						</li>
+						<li>
+							<a href="userManger.html">
+								<span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;用户管理</a>
+						</li>
+						<li>
+							<a href="contentManager.html">
+								<span class="glyphicon glyphicon-folder-open"></span>&nbsp;&nbsp;内容管理</a>
+						</li>
+						<li>
+							<a href="tagManager.html">
+								<span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;标签管理</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right text-center">
+						<li class="dropdown">
+							<a id="dLabel" href="#" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								admin
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="dLabel">
+								<li>
+									<a href="frontIndex.html">
+										<span class="glyphicon glyphicon-asterisk"></span>&nbsp;&nbsp;前台首页</a>
+								</li>
+								<li>
+									<a href="personalIndex.html">
+										<span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;个人主页</a>
+								</li>
+								<li>
+									<a href="personalSet.html">
+										<span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;个人设置</a>
+								</li>
+								<li>
+									<a href="userInfo.html">
+										<span class="glyphicon glyphicon-credit-card"></span>&nbsp;&nbsp;账户信息</a>
+								</li>
+								<li>
+									<a href="collect.html">
+										<span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;我的收藏</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#BBS">
+								<span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;退出</a>
+						</li>
+					</ul>
+				</div>
+				<!-- 大屏幕导航 -->
+			</div>
+		</nav>
+		<!-- header-->
+		<!-- 警告框 -->
+		<section id="se_alert">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="alert alert-danger alert-dismissible" role="alert">
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<strong>网站内容有漏洞，请修复！！!</strong>
+							<p>当前版本存在很大的bug，请处理。</p>
+							<button type="button" class="btn btn-danger">立即修复</button>
+							<button type="button" class="btn btn-default">稍后处理</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<!-- 警告框 -->
+		<!-- 网站统计数据 -->
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">网站统计数据</h3>
+							</div>
+							<div class="panel-body">
+								<table class="table table-hover">
+									<thead>
+										<tr>
+											<th>统计项目</th>
+											<th>昨日</th>
+											<th>今日</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">注册会员:</th>
+											<td>20</td>
+											<td>15</td>
+										</tr>
+										<tr>
+											<th scope="row">登录会员:</th>
+											<td>20</td>
+											<td>15</td>
+										</tr>
+										<tr>
+											<th scope="row">今日发帖:</th>
+											<td>20</td>
+											<td>15</td>
+										</tr>
+										<tr>
+											<th scope="row">转载次数:</th>
+											<td>20</td>
+											<td>15</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">网站热帖</h3>
+							</div>
+							<ul class="list-group">
+								<li class="list-group-item"><a href="#">
+										<span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;今日发帖量已经达到
+										<small class="pull-right">2018/5/29</small>
+									</a></li>
+								<li class="list-group-item"><a href="#">
+										<span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;今日发帖量已经达到
+										<small class="pull-right">2018/5/29</small>
+									</a></li>
+								<li class="list-group-item"><a href="#">
+										<span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;今日发帖量已经达到
+										<small class="pull-right">2018/5/29</small>
+									</a></li>
+								<li class="list-group-item"><a href="#">
+										<span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;今日发帖量已经达到
+										<small class="pull-right">2018/5/29</small>
+									</a></li>
+								<li class="list-group-item"><a href="#">
+										<span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;今日发帖量已经达到
+										<small class="pull-right">2018/5/29</small>
+									</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<!-- 今日统计 -->
+			<div class="container">
+				<div class="col-md-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">今日统计</h3>
+						</div>
+						<div class="panel-body">
+							<canvas id="canvas"></canvas>
+						</div>
+					</div>
+				</div>
+				<!-- 服务器状态统计 -->
+				<div class="col-md-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">服务器状态统计</h3>
+						</div>
+						<div class="panel-body">
+							<p>内存使用率</p>
+							<div class="progress">
+								<div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40"
+								 aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+									<span class="sr-only">40% Complete (success)</span>
+								</div>
+							</div>
+							<p>数据库使用率</p>
+							<div class="progress">
+								<div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20"
+								 aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+									<span class="sr-only">20% Complete</span>
+								</div>
+							</div>
+							<p>磁盘使用率</p>
+							<div class="progress">
+								<div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60"
+								 aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+									<span class="sr-only">60% Complete (warning)</span>
+								</div>
+							</div>
+							<p>CPU使用率</p>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80"
+								 aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+									<span class="sr-only">80% Complete (danger)</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- 留言板 -->
+		<section id="liuyan">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="panel panel-default">
+							<div class="panel-heading">留言板</div>
+							<div class="panel-body">
+								<div class="col-md-7">
+									<div class="media well well-lg">
+										<div class="media-left media-middle">
+											<a href="#">
+												<img class="media-object" src="img/BBS-1.png" alt="">
+											</a>
+										</div>
+										<div class="media-body">
+											<h4 class="media-heading">花无缺</h4>
+											<p>对对对</p>
+										</div>
+									</div>
+									<!-- 2 -->
+									<div class="media well well-lg">
+										<div class="media-body text-right">
+											<h4 class="media-heading">小鱼儿</h4>
+											<p>对对对</p>
+										</div>
+										<div class="media-right media-middle">
+											<a href="#">
+												<img class="media-object" src="img/BBS-2.png" alt="">
+											</a>
+										</div>
+									</div>
+									<!-- 3 -->
+									<div class="media well well-lg">
+										<div class="media-body text-right">
+											<h4 class="media-heading">小鱼儿</h4>
+											<p>对对对</p>
+										</div>
+										<div class="media-right media-middle">
+											<a href="#">
+												<img class="media-object" src="img/BBS-2.png" alt="">
+											</a>
+										</div>
+									</div>
+									<!-- 4 -->
+									<div class="media well well-lg">
+										<div class="media-left media-middle">
+											<a href="#">
+												<img class="media-object" src="img/BBS-1.png" alt="">
+											</a>
+										</div>
+										<div class="media-body">
+											<h4 class="media-heading">花无缺</h4>
+											<p>对对对</p>
+										</div>
+									</div>
+								</div>
+								<!-- 请输入留言内容 -->
+								<div class="col-md-5">
+									<form action="">
+										<div class="form-group">
+											<label for="#textarea">请输入留言内容</label>
+											<textarea class="form-control" name="" id="textarea" cols="10" rows="5" placeholder="请输入留言内容"></textarea>
+											<button type="button" class="btn btn-default">留言</button>
+										</div>
+									</form>
+									<!-- 团队联系手册 -->
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											团队联系手册
+										</div>
+										<div class="panel-body">
+											<ul class="list-group">
+												<li class="list-group-item">
+													站长:连星姑姑 &nbsp;&nbsp;<span class="glyphicon glyphicon-phone"></span>&nbsp;&nbsp;tel：15018475478
+												</li>
+												<li class="list-group-item">
+													站长:连星姑姑 &nbsp;&nbsp;<span class="glyphicon glyphicon-phone"></span>&nbsp;&nbsp;tel：15018475478
+												</li>
+												<li class="list-group-item">
+													站长:连星姑姑 &nbsp;&nbsp;<span class="glyphicon glyphicon-phone"></span>&nbsp;&nbsp;tel：15018475478
+												</li>
+												<li class="list-group-item">
+													站长:连星姑姑 &nbsp;&nbsp;<span class="glyphicon glyphicon-phone"></span>&nbsp;&nbsp;tel：15018475478
+												</li>
+											</ul>
+										</div>
+									</div>
+									<!-- 团队联系手册 -->
+								</div>
+							</div>
+						</div>
+					</div>
+		</section>
+		<!-- 底部 -->
+		<section>
+			<p style="text-align: center;font-size: 15px;font-weight: bold;">Copyright @ 河南省周口市川汇区</p>
+		</section>
+
+		<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+		<script src="js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<!-- <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/Chart.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
